@@ -64,8 +64,8 @@ const AssistanceSchema = new Schema<AssistanceForm>({
       default: 0,
    },
    pampers: {
-      type: Boolean,
-      default: false,
+      type: String,
+      default: '',
    },
    diet: {
       type: String,

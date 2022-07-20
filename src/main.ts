@@ -15,7 +15,6 @@ app.use(cors({
    // origin: process.env.CLIENT_URL,
    origin: '*',
    exposedHeaders: ['X-Total-Count'],
-   methods: "GET,POST",
 }));
 app.use(express.json());
 app.use('/api', router);

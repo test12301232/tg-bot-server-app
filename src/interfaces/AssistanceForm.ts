@@ -14,7 +14,7 @@ export interface AssistanceForm {
    products_detail: string,
    gigien: boolean,
    gigien_num: number,
-   pampers: boolean,
+   pampers: string,
    diet: string,
    pers_data_agreement: boolean,
    photo_agreement: boolean,

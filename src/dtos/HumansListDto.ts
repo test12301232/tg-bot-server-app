@@ -1,11 +1,10 @@
 import { AssistanceForm } from "../interfaces/AssistanceForm";
+import { Types } from "mongoose";
 
 export default class HumansListDto {
-   readonly humansList: Array<string>
+   readonly humansList: Array<{ fio: string, _id: Types.ObjectId }>
 
-   constructor(model: Array<AssistanceForm>) {
-      this.humansList = model.map((item) => {
-         return item.fio;
-      });
+   constructor(model: Array<(AssistanceForm & { _id: Types.ObjectId })>) {
+      this.humansList = model;
    }
 }
